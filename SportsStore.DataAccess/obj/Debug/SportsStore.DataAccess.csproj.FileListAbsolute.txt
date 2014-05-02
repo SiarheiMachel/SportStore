@@ -1,0 +1,11 @@
+C:\Users\Sergey\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.DataAccess\bin\Debug\SportsStore.DataAccess.dll
+C:\Users\Sergey\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.DataAccess\bin\Debug\SportsStore.DataAccess.pdb
+C:\Users\Sergey\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.DataAccess\bin\Debug\Ninject.dll
+C:\Users\Sergey\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.DataAccess\bin\Debug\Ninject.xml
+C:\Users\Sergey\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.DataAccess\obj\Debug\SportsStore.DataAccess.dll
+C:\Users\Sergey\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.DataAccess\obj\Debug\SportsStore.DataAccess.pdb
+C:\Users\Sergey\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Sergey\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sergey\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Sergey\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sergey\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.DataAccess\obj\Debug\SportsStore.DataAccess.csprojResolveAssemblyReference.cache

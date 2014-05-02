@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Web", "SportsStore\SportsStore.Web.csproj", "{0368BF37-1BBB-4E91-8FA9-2E400C36065E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.DataAccess", "SportsStore.DataAccess\SportsStore.DataAccess.csproj", "{2AE8EA8A-2892-4154-9866-441FF249AD60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0368BF37-1BBB-4E91-8FA9-2E400C36065E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0368BF37-1BBB-4E91-8FA9-2E400C36065E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0368BF37-1BBB-4E91-8FA9-2E400C36065E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0368BF37-1BBB-4E91-8FA9-2E400C36065E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AE8EA8A-2892-4154-9866-441FF249AD60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE8EA8A-2892-4154-9866-441FF249AD60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE8EA8A-2892-4154-9866-441FF249AD60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE8EA8A-2892-4154-9866-441FF249AD60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
