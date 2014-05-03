@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
 using SportsStore.DataAccess.Repositories;
 using SportsStore.Web.Models;
@@ -10,11 +7,11 @@ namespace SportsStore.Web.Controllers
 {
     public class CartController : Controller
     {
-        private readonly IProductRepository _productRepository;
+        private readonly IProductRepository productRepository;
 
         public CartController(IProductRepository productRepository)
         {
-            _productRepository = productRepository;
+            this.productRepository = productRepository;
         }
 
         public Cart Cart
@@ -32,7 +29,7 @@ namespace SportsStore.Web.Controllers
 
         public RedirectToRouteResult AddToCart(int id, string returnUrl)
         {
-            var item = _productRepository.GetAllProducts().FirstOrDefault(t => t.Id == id);
+            var item = productRepository.GetAllProducts().FirstOrDefault(t => t.Id == id);
 
             if (item != null)
             {
@@ -44,7 +41,7 @@ namespace SportsStore.Web.Controllers
 
         public RedirectToRouteResult RemoveFromCart(int id, string returnUrl)
         {
-            var item = _productRepository.GetAllProducts().FirstOrDefault(t => t.Id == id);
+            var item = productRepository.GetAllProducts().FirstOrDefault(t => t.Id == id);
 
             if (item != null)
             {
@@ -52,6 +49,15 @@ namespace SportsStore.Web.Controllers
             }
 
             return RedirectToAction("Index", new {returnUrl});
+        }
+
+        public ActionResult Index(string returnUrl)
+        {
+            return View(new CartIndexViewModel
+                {
+                    Cart = Cart,
+                    ReturnURL = returnUrl
+                });
         }
     }
 }

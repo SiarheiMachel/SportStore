@@ -1,7 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Web.Mvc;
-using SportsStore.DataAccess;
 using SportsStore.DataAccess.Repositories;
 using SportsStore.Web.Models;
 
@@ -9,18 +7,18 @@ namespace SportsStore.Web.Controllers
 {
     public class ProductController : Controller
     {
-        private readonly IProductRepository _productRepository;
+        private readonly IProductRepository productRepository;
 
         public int PageSize = 2;
 
         public ProductController(IProductRepository productRepository)
         {
-            _productRepository = productRepository;
+            this.productRepository = productRepository;
         }
 
         public ViewResult List(string category, int page = 1)
         {
-            var products = _productRepository.GetAllProducts()
+            var products = productRepository.GetAllProducts()
                 .Where(t => category == null || t.Category == category)
                 .OrderBy(t => t.Id)
                 .Skip((page - 1)*PageSize)
@@ -31,8 +29,8 @@ namespace SportsStore.Web.Controllers
                 CurrentPage = page,
                 ItemsPerPage = PageSize,
                 TotalItems = category == null 
-                    ? _productRepository.GetAllProducts().Count()
-                    : _productRepository.GetAllProducts().Count(t => t.Category == category)
+                    ? productRepository.GetAllProducts().Count()
+                    : productRepository.GetAllProducts().Count(t => t.Category == category)
             };
 
             return View(new ProductListModel

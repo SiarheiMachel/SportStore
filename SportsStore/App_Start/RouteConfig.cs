@@ -65,6 +65,7 @@ namespace SportsStore.Web
                 name: "Default",
                 url: "{controller}/{action}"
             );
+
         }
     }
 }

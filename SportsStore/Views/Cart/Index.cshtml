@@ -1,0 +1,57 @@
+﻿@model SportsStore.Web.Models.CartIndexViewModel
+
+@{
+    ViewBag.Title = "Sport Store: Your Cart";
+}
+<h2>Your Cart</h2>
+<table width="90%" align="center">
+    <thead>
+        <tr>
+            <th align="center">
+                Quantity
+            </th>
+            <th align="left">
+                Item
+            </th>
+            <th align="right">
+                Price
+            </th>
+            <th align="right">
+                Subtotal
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cartItem in Model.Cart.CartItems)
+        {
+            <tr>
+                <td align="center">
+                    @cartItem.Quantity
+                </td>
+                <td align="left">
+                    @cartItem.Item.Name
+                </td>
+                <td align="right">
+                    @cartItem.Item.Price.ToString("c")
+                </td>
+                <td align="right">
+                    @((cartItem.Item.Price * cartItem.Quantity).ToString("c"))
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" align="right">
+                Total:
+            </td>
+            <td align="right">
+                @Model.Cart.TotalValue.ToString("c")
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+<p align="center" class="actionButtons">
+    <a href="@Model.ReturnURL">Continue Shopping</a>
+</p>

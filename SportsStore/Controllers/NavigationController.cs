@@ -8,16 +8,16 @@ namespace SportsStore.Web.Controllers
 {
     public class NavigationController : Controller
     {
-        private readonly IProductRepository _productRepository;
+        private readonly IProductRepository productRepository;
 
         public NavigationController(IProductRepository productRepository)
         {
-            _productRepository = productRepository;
+            this.productRepository = productRepository;
         }
 
         public PartialViewResult Menu(string category = null)
         {
-            IEnumerable<string> categories = _productRepository.GetAllProducts()
+            IEnumerable<string> categories = productRepository.GetAllProducts()
                 .Select(x => x.Category)
                 .Distinct()
                 .OrderBy(x => x);
