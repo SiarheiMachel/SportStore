@@ -14,6 +14,7 @@ namespace SportsStore.Web
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            ModelBindersConfig.RegisterModelBinders();
 
             ControllerBuilder.Current.SetControllerFactory(new ControllerFactory());
         }
