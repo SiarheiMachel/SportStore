@@ -33,3 +33,4 @@ C:\Users\Sergey\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore\bi
 C:\Users\Sergey\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore\bin\Moq.xml
 C:\Users\Sergey\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore\bin\EntityFramework.dll
 C:\Users\Sergey\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore\bin\EntityFramework.xml
+D:\HOME\Brunches\SportStore\SportsStore\obj\Debug\SportsStore.Web.csprojResolveAssemblyReference.cache
