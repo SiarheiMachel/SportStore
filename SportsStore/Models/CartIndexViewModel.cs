@@ -3,6 +3,6 @@
     public class CartIndexViewModel
     {
         public Cart Cart { get; set; }
-        public string ReturnURL { get;set }
+        public string ReturnURL { get; set; }
     }
 }
