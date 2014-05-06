@@ -6,20 +6,20 @@ namespace SportsStore.Web.Models
 {
     public class Cart
     {
-        private readonly List<CartItem> _cartItems;
+        private readonly List<CartItem> cartItems;
 
         public Cart()
         {
-            _cartItems = new List<CartItem>();
+            cartItems = new List<CartItem>();
         }
 
         public void Add(Product item, int quantity)
         {
-            var itemInCart = _cartItems.FirstOrDefault(t => t.Item.Id == item.Id);
+            var itemInCart = cartItems.FirstOrDefault(t => t.Item.Id == item.Id);
 
             if (itemInCart == null)
             {
-                _cartItems.Add(new CartItem
+                cartItems.Add(new CartItem
                 {
                     Item = item,
                     Quantity = quantity
@@ -33,22 +33,22 @@ namespace SportsStore.Web.Models
 
         public void Remove(Product item)
         {
-            _cartItems.RemoveAll(t => t.Item.Id == item.Id);
+            cartItems.RemoveAll(t => t.Item.Id == item.Id);
         }
 
         public void Clear()
         {
-            _cartItems.Clear();
+            cartItems.Clear();
         }
 
         public decimal TotalValue
         {
-            get { return _cartItems.Sum(t => t.Item.Price*t.Quantity); }
+            get { return cartItems.Sum(t => t.Item.Price*t.Quantity); }
         }
 
         public IEnumerable<CartItem> CartItems
         {
-            get { return _cartItems; }
+            get { return cartItems; }
         } 
     }
 
