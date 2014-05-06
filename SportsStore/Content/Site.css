@@ -11,6 +11,8 @@ div#header {
     background-color: #444;
     border-bottom: 2px solid #111;
     color: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 div#header div.title {
@@ -128,5 +130,22 @@ tfoot td {
     text-decoration: none;
     padding: 0.15em 1.5em 0.2em 1.5em;
     background-color: #353535;
+    border: 1px solid black;
+}
+
+div#cart {
+    float: right;
+    margin: 0.8em;
+    color: silver;
+    margin: 0.5em 0.5em 0.5em 1em;
+}
+
+div#cart a {
+    text-decoration: none;
+    padding: 0.4em 1em 0.4em 1em;
+    line-height: 2.1em;
+    margin-left: 0.5em;
+    background-color: #333;
+    color: white;
     border: 1px solid black;
 }

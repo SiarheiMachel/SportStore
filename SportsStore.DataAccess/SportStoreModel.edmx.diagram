@@ -6,6 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="c87d4798b99e4c07836d8a90e84e412c" Name="Diagram1">
         <EntityTypeShape EntityType="SportStoreModel.Product" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportStoreModel.ShippingDetail" Width="1.5" PointX="3.5" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -10,6 +10,20 @@
       [Products].[Category] AS [Category]
       FROM [dbo].[Products] AS [Products]</DefiningQuery>
     </EntitySet>
+    <EntitySet Name="ShippingDetails" EntityType="SportStoreModel.Store.ShippingDetails" store:Type="Tables" store:Schema="dbo" store:Name="ShippingDetails">
+      <DefiningQuery>SELECT 
+      [ShippingDetails].[Id] AS [Id], 
+      [ShippingDetails].[Name] AS [Name], 
+      [ShippingDetails].[Address1] AS [Address1], 
+      [ShippingDetails].[Address2] AS [Address2], 
+      [ShippingDetails].[Address3] AS [Address3], 
+      [ShippingDetails].[City] AS [City], 
+      [ShippingDetails].[State] AS [State], 
+      [ShippingDetails].[Zip] AS [Zip], 
+      [ShippingDetails].[Country] AS [Country], 
+      [ShippingDetails].[GiftWrap] AS [GiftWrap]
+      FROM [dbo].[ShippingDetails] AS [ShippingDetails]</DefiningQuery>
+    </EntitySet>
   </EntityContainer>
   <!--Errors Found During Generation:
       warning 6002: The table/view 'SportStore.dbo.Products' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
@@ -25,5 +39,28 @@
     <Property Name="Description" Type="varchar" MaxLength="500" />
     <Property Name="Price" Type="decimal" Nullable="false" />
     <Property Name="Category" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'SportStore.dbo.ShippingDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ShippingDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Address1" />
+      <PropertyRef Name="City" />
+      <PropertyRef Name="State" />
+      <PropertyRef Name="Country" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Address1" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Address2" Type="varchar" MaxLength="100" />
+    <Property Name="Address3" Type="varchar" MaxLength="100" />
+    <Property Name="City" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="State" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Zip" Type="varchar" MaxLength="50" />
+    <Property Name="Country" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="GiftWrap" Type="bit" />
   </EntityType>
 </Schema>

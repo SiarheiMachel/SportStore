@@ -46,5 +46,15 @@ namespace SportsStore.Web.Controllers
                     ReturnURL = returnUrl
                 });
         }
+
+        public ActionResult Summary(Cart cart)
+        {
+            return View(cart);
+        }
+
+        public ActionResult Checkout()
+        {
+            return View(new ShippingDetailsModel());
+        }
     }
 }

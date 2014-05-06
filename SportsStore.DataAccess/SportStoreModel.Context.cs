@@ -26,5 +26,6 @@ namespace SportsStore.DataAccess
         }
     
         public DbSet<Product> Products { get; set; }
+        public DbSet<ShippingDetail> ShippingDetails { get; set; }
     }
 }

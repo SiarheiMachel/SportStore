@@ -64,6 +64,9 @@
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="ShippingDetail.cs">
+      <DependentUpon>SportStoreModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="SportStoreModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -81,6 +84,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
     <None Include="packages.config" />
     <EntityDeploy Include="SportStoreModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
